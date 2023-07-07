@@ -1,5 +1,6 @@
 import { useElement } from '@youliso/granule';
 import Router from '@/renderer/router';
+import { viewCreate } from '@youliso/electronic/ipc/view';
 import { windowCreate, windowShow } from '@youliso/electronic/ipc/window';
 import style from './style';
 
@@ -38,19 +39,12 @@ const tk = () => {
 };
 
 const toBilibili = () => {
-  windowCreate(
-    {
-      loadType: 'url',
-      url: 'https://www.bilibili.com/',
-      position: 'center'
-    },
-    {
-      width: 800,
-      height: 600,
-      modal: true,
-      resizable: true
-    }
-  );
+  viewCreate({
+    winId: window.customize.winId as number,
+    key: 'bilibili',
+    url: 'https://www.bilibili.com/',
+    owh: [0, 100]
+  });
 };
 
 const [date, dateElement] = useElement(Date());
@@ -66,7 +60,7 @@ export const render = () => {
         弹框
       </button>
       <button class="but" onClick={() => toBilibili()}>
-        bilibili
+        内嵌 bilibili
       </button>
       <button class="but" onClick={() => Router.push('/about')}>
         关于

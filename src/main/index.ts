@@ -4,6 +4,7 @@ import {
   Session,
   createTray,
   Update,
+  View,
   logError
 } from '@youliso/electronic/main';
 import { app } from 'electron';
@@ -24,10 +25,12 @@ appInstance
       updateCfg.dirname
     );
     const session = new Session();
+    const view = new View();
 
     tray.on('click', () => windowInstance.func('show'));
     update.on();
     session.on();
+    view.on();
 
     // 调试模式
     if (!app.isPackaged) {
