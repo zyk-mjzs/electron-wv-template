@@ -21,7 +21,7 @@
     "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
-    "@youliso/electronic": "^1.0.5",
+    "@youliso/electronic": "^1.0.7",
     "@youliso/granule": "^0.0.10",
     "asarmor": "^2.0.0",
     "electron": "^25.2.0",
