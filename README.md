@@ -1,2 +1,2 @@
-# gtk_vanilla_ui
-A simple component library (gtk4 rust)
+# electron-wv-template
+A simple electron-wv-template
