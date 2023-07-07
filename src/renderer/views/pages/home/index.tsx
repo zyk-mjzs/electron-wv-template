@@ -43,7 +43,7 @@ const toBilibili = () => {
     winId: window.customize.winId as number,
     key: 'bilibili',
     url: 'https://www.bilibili.com/',
-    owh: [0, 100]
+    owh: [100, 10, 10, 10]
   });
 };
 
