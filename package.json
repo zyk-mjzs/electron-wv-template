@@ -1,0 +1,41 @@
+{
+  "name": "electron-template",
+  "productName": "electron-template",
+  "version": "1.0.0",
+  "description": "electron template",
+  "main": "dist/main/index.js",
+  "author": {
+    "name": "youliso",
+    "email": "youliso@Hotmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/buildCfg.js && node scripts/dev.js",
+    "build": "node scripts/buildCfg.js && node scripts/build.js",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "@emotion/css": "^11.11.2",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@youliso/electronic": "^1.0.5",
+    "@youliso/granule": "^0.0.10",
+    "asarmor": "^2.0.0",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "esbuild": "^0.18.11",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.1",
+    "vite-plugin-babel-macros": "^1.0.6"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.1",
+    "serialport": "^11.0.0"
+  }
+}
